@@ -1,0 +1,97 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 Student Info
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Contact number:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Father Name:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Aadhaar no:
+                |  <span id='userInfoaadhaar'></span>
+                br
+                strong Location:
+                |  <span id='userInfoLocation'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 User List
+        #userList
+            table
+                thead
+                    th Name
+                    th Phone number
+                    th action
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Add User
+        #addUser
+            
+                table(cellpadding='2', width='50%', border='10', align='center', cellspacing='2')
+                  tr
+                    td(colspan='2')
+                      center
+                        font(size='4')
+                          b Student Registration Form
+                  tr
+                    td FirstName
+                    td
+                      input#inputfirstname(type='text', name='FirstName', size='30')
+                  tr
+                    td LastName
+                    td
+                      input#inputlastname(type='text', name='LastName', size='30')
+                  tr
+                    td Father Name
+                    td
+                      input#inputfathername(type='text', name='fathername', size='30')
+                  tr
+                    td Mother name
+                    td
+                      input#inputmothername(type='text', name='Mothername', size='30')
+                  tr
+                    td Relegion
+                    td
+                      input#inputRelegion(type='text', name='Relegion', size='30')
+                  tr
+                    td caste
+                    td
+                      input#inputcaste(type='text', name='caste', size='30')
+                  tr
+                    td Personal Address
+                    td
+                      input#inputaddress(type='text', name='personaladdress', size='30')
+                  tr
+                    td Aadhaar no
+                    td
+                      input#inputAadhaarno(type='number', name='Aadhaarno', size='30')
+                  tr
+                    td DOB
+                    td
+                      input#inputdob(type='date', name='dob', size='30')
+                  tr
+                    td MobileNo
+                    td
+                      input#inputphonenumber(type='number', name='mobileno', size='30')
+                  tr
+                    td
+                    td
+                      button#btnAddUser(type='button') Register Student
+        // /ADD USER
+
+    // /WRAPPER
